@@ -16,9 +16,13 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.6/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
     <style type="text/tailwindcss">
         @theme {
-            --color-bike-primary: #E76F51;
+            --color-primary-yellow: #FFDC26;
+            --color-header: #FFF9F4;
             --font-adlam-display: "ADLaM Display", serif;
             --font-sora: "Sora", serif;
         }
@@ -27,7 +31,41 @@
 </head>
 <body>
 
+    <header class="bg-header">
+        <nav class="font-sora px-3 md:px-5">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <a class="text-xl flex items-center gap-3 hover:cursor-pointer">
+                        <img src="images/logo-header.png" alt="Logo Header">
+                        <h3 class="text-3xl hidden md:block">Browse<span class="text-primary-yellow">4</span>Pets</h3>
+                    </a>
+                </div>
 
+                <!-- TODO: Show alternative menu for mid size devices -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-4 hidden md:flex">
+                    <a class="hover:cursor-pointer"><i class="fa-regular fa-bell"></i></a>
+                    <a class="hover:cursor-pointer"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="btn">Login</a>
+                    <a class="btn bg-primary-yellow">Register</a>
+                </div>
+
+                <div class="navbar-end md:hidden">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 </body>
 </html>
