@@ -23,17 +23,18 @@
         @theme {
             --color-primary-yellow: #FFDC26;
             --color-header: #FFF9F4;
+            --color-cards: #F9DF8A;
             --font-adlam-display: "ADLaM Display", serif;
             --font-sora: "Sora", serif;
         }
     </style>
 
 </head>
-<body>
+<body class="font-sora">
 
     <header class="">
         <nav class="bg-header px-3 md:px-5">
-            <div class="font-sora navbar container mx-auto">
+            <div class="navbar container mx-auto">
                 <div class="navbar-start">
                     <a class="text-xl flex items-center gap-3 hover:cursor-pointer">
                         <img src="images/logo-header.png" alt="Logo Header">
@@ -82,6 +83,157 @@
             </div>
         </div>
     </header>
+
+    <main>
+
+        <!-- Browse By Categories Section -->
+        <section class="container mx-auto px-5 py-10 mb-16 md:mb-20 lg:mb-32">
+
+            <h2 class="font-adlam-display text-4xl mb-12">Browse By Categories</h2>
+
+            <!-- category cards -->
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-7">
+
+
+                <!-- card -->
+                <div class="card shadow-sm bg-cards">
+                    <figure class="px-10 pt-10">
+                        <!-- Aspect-ratio-safe container -->
+                        <div class="w-28 aspect-square mx-auto bg-white rounded-full p-5">
+                            <!-- Image fills container without stretching -->
+                            <img
+                                    src="images/dog-cartoon.png"
+                                    alt="Dog Cartoon"
+                                    class="w-full h-full object-contain"
+                            />
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-adlam-display">Dog</h2>
+                        <p>3 Items</p>
+                    </div>
+                </div>
+
+
+                <!-- card -->
+                <div class="card shadow-sm bg-cards">
+                    <figure class="px-10 pt-10">
+                        <!-- Aspect-ratio-safe container -->
+                        <div class="w-28 aspect-square mx-auto bg-white rounded-full p-5">
+                            <!-- Image fills container without stretching -->
+                            <img
+                                    src="images/fish-cartoon.png"
+                                    alt="Dog Cartoon"
+                                    class="w-full h-full object-contain"
+                            />
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-adlam-display">Fish</h2>
+                        <p>7 Items</p>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="card shadow-sm bg-cards">
+                    <figure class="px-10 pt-10">
+                        <!-- Aspect-ratio-safe container -->
+                        <div class="w-28 aspect-square mx-auto bg-white rounded-full p-5">
+                            <!-- Image fills container without stretching -->
+                            <img
+                                    src="images/cat-cartoon.png"
+                                    alt="Dog Cartoon"
+                                    class="w-full h-full object-contain"
+                            />
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-adlam-display">Cat</h2>
+                        <p>7 Items</p>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="card shadow-sm bg-cards">
+                    <figure class="px-10 pt-10">
+                        <!-- Aspect-ratio-safe container -->
+                        <div class="w-28 aspect-square mx-auto bg-white rounded-full p-5">
+                            <!-- Image fills container without stretching -->
+                            <img
+                                    src="images/bird-cartoon.png"
+                                    alt="Dog Cartoon"
+                                    class="w-full h-full object-contain"
+                            />
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-adlam-display">Birds</h2>
+                        <p>12 Items</p>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="card shadow-sm bg-cards">
+                    <figure class="px-10 pt-10">
+                        <!-- Aspect-ratio-safe container -->
+                        <div class="w-28 aspect-square mx-auto bg-white rounded-full p-5">
+                            <!-- Image fills container without stretching -->
+                            <img
+                                    src="images/mouse-cartoon.png"
+                                    alt="Dog Cartoon"
+                                    class="w-full h-full object-contain"
+                            />
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-adlam-display">Small Pets</h2>
+                        <p>2 Items</p>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="card shadow-sm bg-cards">
+                    <figure class="px-10 pt-10">
+                        <!-- Aspect-ratio-safe container -->
+                        <div class="w-28 aspect-square mx-auto bg-white rounded-full p-5">
+                            <!-- Image fills container without stretching -->
+                            <img
+                                    src="images/rabbit-cartoon.png"
+                                    alt="Dog Cartoon"
+                                    class="w-full h-full object-contain"
+                            />
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-adlam-display">Rabbit</h2>
+                        <p>15 Items</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="bg-header">
+            <div class="container mx-auto px-5 py-10 md:py-20 lg:py-32">
+                <h2 class="font-adlam-display text-4xl mb-12">Trending Pet Products</h2>
+
+                <!-- cards -->
+                <div>
+
+                    <!-- large card -->
+
+
+
+                    <!-- cards grid -->
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
 </html>
